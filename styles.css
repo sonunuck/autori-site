@@ -489,3 +489,13 @@ main > .section:first-child { padding-top: calc(var(--header-h) + 120px); }
   .footer-grid { grid-template-columns: minmax(0, 1fr); }
   .case .body { padding: 22px; }
 }
+
+/* 데모 페이지 (도구/demo_pages.py, 2026-11-23) */
+.shot-list { display: grid; gap: 56px; margin-top: 40px; }
+.shot { max-width: min(100%, var(--w, 960px)); }
+.ask-word { margin-top: 20px; font-size: 15px; color: var(--text-2); }
+.ask-word b { color: var(--accent); }
+.mail-draft { padding: 20px 24px; font-size: 14px; line-height: 1.7; color: var(--ink); }
+.mail-draft p { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--hairline); }
+.mail-draft p span { flex: none; width: 72px; color: var(--ink-mute); }
+.mail-body { margin-top: 14px; white-space: pre-line; }
