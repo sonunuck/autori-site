@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!-- 오토리 아이콘 v1 (안2-매듭 채택): 흰 선(currentColor, 1.6, 둥근 끝) + 살구 매듭 점(#FEB17B) 하나.
+       쓰는 법: <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-files"/></svg> -->
+  <symbol id="i-files" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7.8 3.2h5.7l5 5v9.3a1.8 1.8 0 0 1-1.8 1.8H7.8A1.8 1.8 0 0 1 6 17.5V5a1.8 1.8 0 0 1 1.8-1.8Z"/>
+    <path d="M13.5 3.2v3.2a1.8 1.8 0 0 0 1.8 1.8h3.2"/>
+    <path d="M3.5 7.8v11.4A1.8 1.8 0 0 0 5.3 21h9.2"/>
+    <path d="M9.4 11.8h5.7M9.4 14.8h3.8"/>
+    <circle cx="19.2" cy="4.2" r="1.8" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5.5" width="18" height="13" rx="2.2"/>
+    <path d="m3.8 6.8 5.5 3.7"/>
+    <path d="m20.2 6.8-5.5 3.7"/>
+    <circle cx="12" cy="12.2" r="1.9" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-columns" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.8" y="4" width="18.4" height="16" rx="2.2"/>
+    <path d="M2.8 9h18.4M8.9 9v11M15.1 9v11"/>
+    <circle cx="12" cy="14.5" r="1.7" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-merge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5.5 4v1.8c0 2.4 1.4 4.1 3.7 4.8"/>
+    <path d="M18.5 4v1.8c0 2.4-1.4 4.1-3.7 4.8"/>
+    <path d="M12 15.5v4.7"/>
+    <path d="m9.2 17.4 2.8 2.8 2.8-2.8"/>
+    <circle cx="12" cy="12.2" r="1.9" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-sum" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4.5" y="3" width="15" height="18" rx="2.2"/>
+    <path d="M8 6.8h8M4.5 10h15M8.2 13.5h2.6M13.2 13.5h2.6M8.2 17.2h2.6"/>
+    <circle cx="14.6" cy="17.1" r="1.8" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10.4 4.3 3.1 17.4a1.85 1.85 0 0 0 1.6 2.8h14.6a1.85 1.85 0 0 0 1.6-2.8L13.6 4.3a1.85 1.85 0 0 0-3.2 0Z"/>
+    <path d="M12 9.4v3.8"/>
+    <circle cx="12" cy="16.7" r="1.5" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.08 9.06A8.6 8.6 0 1 1 14.94 3.92"/>
+    <path d="M12 7.5V12l3.2 2"/>
+    <circle cx="18.1" cy="5.9" r="1.9" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-report" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4.5" y="3" width="15" height="18" rx="2.2"/>
+    <path d="M8.5 16.5v-3M12 16.5v-6M15.5 16.5v-4.5"/>
+    <circle cx="15.5" cy="8.2" r="1.7" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4.2c4.7 0 8.5 3.3 8.5 7.4 0 4.1-3.8 7.4-8.5 7.4-1.3 0-2.5-.25-3.6-.72L4.2 19.8l1.2-3.4C4.2 15.1 3.5 13.4 3.5 11.6c0-4.1 3.8-7.4 8.5-7.4Z"/>
+    <path d="M7.8 10h4.8M7.8 13.2h3.2"/>
+    <circle cx="15.6" cy="11.8" r="1.7" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m12 3.3 2.6 5.3 5.8.85-4.2 4.1 1 5.8L12 16.6l-5.2 2.75 1-5.8-4.2-4.1 5.8-.85L12 3.3Z"/>
+    <circle cx="12" cy="12.3" r="1.8" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-person" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="10.2" cy="8.2" r="3.6"/>
+    <path d="M3.5 20a6.7 6.7 0 0 1 13.4 0"/>
+    <circle cx="18.6" cy="7.5" r="1.9" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.08 9.06A8.6 8.6 0 1 1 14.94 3.92"/>
+    <path d="m8.4 12.2 2.4 2.5 5-5.3"/>
+    <circle cx="18.1" cy="5.9" r="1.9" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4.5" y="10.5" width="15" height="10" rx="2.2"/>
+    <path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7"/>
+    <circle cx="12" cy="15.5" r="1.8" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="10.8" cy="10.8" r="6.6"/>
+    <path d="m15.5 15.5 4.7 4.7"/>
+  </symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4.8 17.2H4a1.5 1.5 0 0 1-1.5-1.5V7.5A1.5 1.5 0 0 1 4 6h8.7a1.5 1.5 0 0 1 1.5 1.5v9.7H8.8"/>
+    <path d="M14.2 10h3.3a1.5 1.5 0 0 1 1.2.6l2.4 3.2a1.5 1.5 0 0 1 .3.9v1a1.5 1.5 0 0 1-1.5 1.5h-.5"/>
+    <path d="M14.2 17.2h1.2"/>
+    <circle cx="6.8" cy="17.2" r="2"/>
+    <circle cx="17.4" cy="17.2" r="2"/>
+    <circle cx="8.4" cy="11.2" r="1.8" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.5 9.2 5.2 4.2h13.6l1.7 5"/>
+    <path d="M3.5 9.2a2.83 2.6 0 0 0 5.67 0 2.83 2.6 0 0 0 5.66 0 2.83 2.6 0 0 0 5.67 0"/>
+    <path d="M5.2 11.5V20h13.6v-8.5"/>
+    <path d="M7.2 20v-5a1 1 0 0 1 1-1h2.2a1 1 0 0 1 1 1v5"/>
+    <circle cx="15.2" cy="15.8" r="1.8" fill="#FEB17B" stroke="none"/>
+  </symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15.2 3.8a2.1 2.1 0 0 1 3 3L8.8 16.2l-3.6.8.8-3.6L15.2 3.8Z"/>
+    <path d="m13.6 5.4 3 3"/>
+    <path d="M12.5 19.8h7.5"/>
+    <circle cx="8.6" cy="19.8" r="1.7" fill="#FEB17B" stroke="none"/>
+  </symbol>
+</svg>

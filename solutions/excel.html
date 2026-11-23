@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>엑셀 자동 취합 — 틀리지 않는 지점·거래처 엑셀 합치기 | 오토리</title>
+  <meta name="description" content="지점·거래처에서 제각각 들어오는 엑셀을 정한 요일에 모아, 검산과 틀린 곳 표시까지 한 보고서를 메일로 보내 주는 Windows 프로그램. 지금은 시범 고객을 모집합니다.">
+  <link rel="canonical" href="https://autori.kr/solutions/excel.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="오토리">
+  <meta property="og:title" content="엑셀 자동 취합 — 틀리지 않는 자동 취합 | 오토리">
+  <meta property="og:description" content="우리 엑셀, 자동 취합 되는지 먼저 무료로 확인해 보세요.">
+  <meta property="og:url" content="https://autori.kr/solutions/excel.html">
+  <meta property="og:image" content="https://autori.kr/assets/og.png">
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<!--#header:excel-->
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="../index.html" aria-label="오토리 처음으로"><img src="../assets/logo/logo-lockup-white.png" alt="오토리" width="109" height="34"></a>
+    <nav class="nav" aria-label="주 메뉴">
+      <div class="nav-drop is-current">
+        <button type="button" aria-expanded="false" aria-controls="drop-solutions">솔루션</button>
+        <div class="drop" id="drop-solutions" hidden><a href="../solutions/excel.html" aria-current="page"><strong>엑셀 자동 취합</strong><span>지점·거래처 엑셀을 매주 모아 검산까지</span></a><a href="../solutions/reviews.html"><strong>리뷰 분석 + 답글 초안</strong><span>쌓인 리뷰를 답글 초안과 개선 보고서로</span></a><p class="drop-label">데모 · 아직 팔지 않음</p><a href="../solutions/seller-settlement.html"><strong>셀러 주문·정산 엑셀 취합</strong></a><a href="../solutions/orders-shipping.html"><strong>주문·송장 자동 정리</strong></a></div>
+      </div>
+      <a href="../about.html">소개</a>
+      <a href="../contact.html">문의</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn--fill" href="https://open.kakao.com/o/gR3ErhYi" target="_blank" rel="noopener">문의하기</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기"><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" hidden><a href="../index.html">처음으로</a><p class="group">솔루션</p><a class="sub" href="../solutions/excel.html" aria-current="page">엑셀 자동 취합</a><a class="sub" href="../solutions/reviews.html">리뷰 분석 + 답글 초안</a><p class="group">데모 · 아직 팔지 않음</p><a class="sub" href="../solutions/seller-settlement.html">셀러 주문·정산 엑셀 취합</a><a class="sub" href="../solutions/orders-shipping.html">주문·송장 자동 정리</a><a href="../about.html">소개</a><a href="../contact.html">문의</a><a class="btn btn--fill" href="https://open.kakao.com/o/gR3ErhYi" target="_blank" rel="noopener">오픈채팅으로 문의하기</a></nav>
+</header>
+<!--/header-->
+
+<main id="main">
+
+  <!-- 1. 첫 화면 -->
+  <section class="section--navy hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tags"><span class="tag">시범 고객 모집</span></div>
+        <h1 id="hero-title" class="display-xxl">틀리지 않는<br>자동 취합</h1>
+        <p class="lead">지점·거래처 엑셀을 매주 손으로 합치는 담당자님을 위한 Windows 프로그램입니다. 가상 자료로 시험을 마쳤고, 실제 회사 파일로 함께 확인해 볼 첫 고객을 찾고 있습니다.</p>
+        <div class="btn-row">
+          <a class="btn btn--fill" href="https://open.kakao.com/o/gR3ErhYi" target="_blank" rel="noopener">우리 엑셀 되는지 무료 확인</a>
+          <a class="btn btn--line" href="#flow">어떻게 되는지 보기</a>
+        </div>
+        <p class="hero-note">양식 견본(개인정보를 지운 것)을 보내 주시면 2일 안에 되는지, 안 되는지와 그 이유를 답해 드립니다.</p>
+      </div>
+      <figure>
+        <div class="screen">
+          <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i><span>받는 폴더</span></div>
+          <img src="../assets/screens/hero-inbox.png" width="735" height="270" alt="받는 폴더에 쌓인 지점 엑셀 7개. 강남점_주간실적_0928, 대구점 report, 대전점_weekly처럼 파일 이름과 모양이 제각각이다">
+        </div>
+        <figcaption>지점마다 이름도 모양도 다른 엑셀 7개 — 연습용 자료로 만든 실제 화면입니다.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. 아픈 점 -->
+  <section class="section section--white" aria-labelledby="say-title">
+    <div class="container split">
+      <div class="sticky">
+        <h2 id="say-title" class="title"><span class="mute">매주 월요일 아침,</span><span class="strong">이런 말 하고 계신가요?</span></h2>
+        <div class="knot-line knot-line--deep" aria-hidden="true"></div>
+      </div>
+      <div>
+        <ul class="quotes">
+          <li class="quote reveal">매주 같은 엑셀을 열고, 같은 칸을 복사하고, 같은 합계를 다시 더합니다.</li>
+          <li class="quote reveal">어렵지는 않은데 틀리면 안 돼서, 아무도 대신해 주지 않아요. 월요일 아침이 통째로 사라집니다.</li>
+          <li class="quote reveal">자동화는 무서워요. 검은 창, 영어 화면, 키 발급…</li>
+        </ul>
+        <p class="quote-turn reveal">어렵지 않지만 틀리면 안 되는 일.<br>그 일을 프로그램이 대신합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 흐름 -->
+  <section class="section section--soft" id="flow" aria-labelledby="flow-title">
+    <div class="container">
+      <h2 id="flow-title" class="title"><span class="mute">넣어 두기만 하면,</span><span class="strong">정한 요일에 보고서가 옵니다.</span></h2>
+      <p class="lead">모으고, 열 이름을 맞추고, 합친 뒤, 원본 합계와 대조해 보고서로 보내기까지 한 번에 이어집니다.</p>
+      <ol class="pills" aria-label="프로그램이 하는 일 순서">
+        <li><span>모으기</span></li>
+        <li><span>열 이름 맞추기</span></li>
+        <li><span>합치기</span></li>
+        <li><span>원본 합계와 대조</span></li>
+        <li><span>보고서 메일</span></li>
+      </ol>
+      <div class="io-grid">
+        <div class="card">
+          <h3><span class="ico" aria-hidden="true"><svg class="icon"><use href="../assets/icons/sprite.svg#i-files"/></svg></span>들어오는 것</h3>
+          <ul>
+            <li>받는 폴더에 넣어 둔 지점·거래처 엑셀</li>
+            <li>취합 전용 Gmail에 첨부로 온 엑셀</li>
+            <li>파일 이름·열 이름·칸 순서가 서로 다른 양식</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="ico" aria-hidden="true"><svg class="icon"><use href="../assets/icons/sprite.svg#i-report"/></svg></span>나오는 것</h3>
+          <ul>
+            <li>보고서 엑셀 1개(시트 6장)가 담당자님 메일로</li>
+            <li>맨 위에 미제출 목록, 틀린 곳은 확인필요 시트에</li>
+            <li>모든 줄에 원본 파일·시트·행 번호</li>
+          </ul>
+        </div>
+      </div>
+      <p class="caption" style="margin-top:16px">보고서 시트 6장: 요약 · 지점별 · 확인필요 · 검산 · 통합데이터 · 매칭결과. 처음 보는 열 이름만 여쭤보고, 한 번 알려 주시면 기억합니다.</p>
+    </div>
+  </section>
+
+  <!-- 4. 전/후 + 틀리지 않게 -->
+  <section class="section section--white" aria-labelledby="ba-title">
+    <div class="container">
+      <h2 id="ba-title" class="title"><span class="mute">설치 전과 후,</span><span class="strong">무엇이 달라지나요</span></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th scope="col">지금</th><th scope="col">설치 후</th></tr></thead>
+          <tbody>
+            <tr><td>파일을 하나씩 열어 복사·붙여넣기</td><td>받는 폴더(또는 취합 전용 Gmail)에 넣어 두기만</td></tr>
+            <tr><td>"매출액"·"판매금액"·"Amount"를 눈으로 맞춤</td><td>프로그램이 맞추고, 모르는 것만 묻고, 한 번 알려 주면 기억</td></tr>
+            <tr><td>다 합치고 계산기로 다시 더함</td><td>원본 합계와 모은 합계를 매번 비교한 검산 표</td></tr>
+            <tr><td>"이 숫자 어디서 나왔지?"</td><td>모든 줄에 원본 파일·시트·행 번호</td></tr>
+            <tr><td>누가 안 냈는지 메신저로 확인</td><td>미제출 목록이 보고서 맨 위에</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="split split--even" style="margin-top:72px">
+        <div>
+          <h3 class="display-md">어떻게 틀리지 않게 하나요</h3>
+          <ul class="checks" style="margin-top:24px">
+            <li><b>AI는 숫자를 만지지 않습니다.</b> AI는 열 이름을 맞추는 "고르기"만 하고, 계산은 프로그램 코드가 합니다.</li>
+            <li>AI에 보내는 것은 열 제목과 값의 모양뿐입니다. AI 키가 없어도 핵심 기능은 동작합니다.</li>
+            <li>모르면 지어내지 않고 여쭤봅니다.</li>
+            <li>같은 입력에는 같은 결과가 나옵니다.</li>
+            <li><b>자료는 고객 PC 밖으로 나가지 않습니다.</b> 올리지 않습니다. 올릴 곳이 없습니다. (오토리는 서버가 없습니다)</li>
+          </ul>
+        </div>
+        <figure>
+          <div class="screen">
+            <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i><span>취합보고서_연습용.xlsx — 요약</span></div>
+            <img src="../assets/screens/report-summary.png" width="808" height="539" alt="보고서 요약 시트. 총매출액 46,697,000원, 제출 7/8곳, 확인 필요 14건과 확인 필요 내역이 보인다" loading="lazy">
+          </div>
+          <figcaption>보고서 요약 시트 — 연습용 자료로 만든 실제 화면입니다.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 예외 처리 -->
+  <section class="section section--cream" aria-labelledby="ex-title">
+    <div class="container split">
+      <div class="sticky">
+        <h2 id="ex-title" class="title"><span class="mute">문제가 생기면</span><span class="strong">숨기지 않고 남깁니다</span></h2>
+        <p class="lead">자동으로 처리하기 애매한 것은 사람이 볼 수 있게 표시합니다.</p>
+      </div>
+      <div>
+        <div class="table-wrap" style="margin-top:0">
+          <table class="table" style="min-width:480px">
+            <thead><tr><th scope="col">이럴 때</th><th scope="col">이렇게 남깁니다</th></tr></thead>
+            <tbody>
+              <tr><td>안 낸 곳이 있을 때</td><td>보고서 맨 위 미제출 목록</td></tr>
+              <tr><td>같은 자료가 두 번 들어왔을 때</td><td>확인필요 시트에 표시, 자동으로 더하지 않음</td></tr>
+              <tr><td>처음 보는 열 이름</td><td>지어내지 않고 여쭤봄</td></tr>
+              <tr><td>합계가 원본과 다를 때</td><td>검산 시트에 어느 파일인지 표시</td></tr>
+              <tr><td>깨진 파일·빈 파일</td><td>멈추지 않고 건너뛴 뒤 목록에 남김</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure style="margin-top:32px">
+          <div class="screen">
+            <div class="screen-bar" aria-hidden="true"><i></i><i></i><i></i><span>취합보고서_연습용.xlsx — 검산</span></div>
+            <img src="../assets/screens/report-sheets.png" width="1029" height="515" alt="검산 시트. 파일마다 원본 합계, 통합 합계, 차이가 나오고 대구점 매출액은 '원본 합계 없음'으로 표시되어 있다" loading="lazy">
+          </div>
+          <figcaption>검산 시트 — 원본 합계가 없는 파일은 "원본 합계 없음"으로 따로 표시합니다. 연습용 자료로 만든 실제 화면입니다.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 시험 기록 -->
+  <section class="section section--soft" aria-labelledby="test-title">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px"><span class="tag">가상 자료로 한 시험</span><span class="caption">2026-11-23 기준</span></div>
+      <h2 id="test-title" class="title" style="margin-top:16px"><span class="mute">합계가 정말 맞는지</span><span class="strong">돌려 보고 나서야 내놓았습니다</span></h2>
+      <ul class="facts">
+        <li class="fact"><b>317개</b><span>자동 시험 통과</span></li>
+        <li class="fact"><b>2,000개</b><span>무작위 표·양식 각 1,000개(가상 엑셀) — 합계가 한 번도 다르지 않음</span></li>
+        <li class="fact"><b>18종</b><span>깨진 파일·빈 파일 등 이상한 파일에도 멈추지 않음</span></li>
+        <li class="fact"><b>PC 2대</b><span>실제 Windows 11 PC(한글 이름 PC 포함)에서 설치 → Gmail 첨부 가져오기 → 보고서 메일 도착 → 자동 실행 확인</span></li>
+        <li class="fact"><b>0건</b><span>AI 점검 5회, 틀린 자동 반영</span></li>
+      </ul>
+      <p class="honest">실제 회사 자료로 잰 절감 시간은 아직 없습니다. 그래서 "몇 시간 절약" 같은 말을 쓰지 않습니다.</p>
+    </div>
+  </section>
+
+  <!-- 7. 도입 순서 + 넘겨 드리는 것 + 가격 -->
+  <section class="section section--white" id="price" aria-labelledby="step-title">
+    <div class="container split">
+      <div>
+        <h2 id="step-title" class="title"><span class="mute">무료 확인부터</span><span class="strong">천천히 시작합니다</span></h2>
+        <ol class="steps">
+          <li><div><strong>무료 확인</strong><span>양식 견본(개인정보를 지운 것)을 보내 주시면 2일 안에 되는지, 안 되는지와 이유를 답합니다.</span></div></li>
+          <li><div><strong>원격 설치</strong><span>한글 화면, 버튼 하나. 비밀번호는 절대 묻지 않습니다.</span></div></li>
+          <li><div><strong>처음 2주는 병행 운영</strong><span>보고서를 담당자님만 받습니다. 지금 하시던 방식과 나란히 비교합니다.</span></div></li>
+          <li><div><strong>메일 자동 가져오기</strong><span>익숙해지면 취합 전용 Gmail의 첨부를 자동으로 가져오게 켭니다.</span></div></li>
+          <li><div><strong>윗분께도 보고서</strong><span>그다음 윗분께도 보고서가 가게 합니다.</span></div></li>
+        </ol>
+        <h3 class="heading-lg" style="margin-top:48px">넘겨 드리는 것</h3>
+        <ul class="dashes" style="margin-top:12px">
+          <li>설치된 프로그램</li><li>설치 가이드 · 사용 설명서</li><li>첫 보고서</li><li>2주 병행 운영 · 수정 2회</li>
+        </ul>
+      </div>
+      <div class="sticky">
+        <div class="card card--navy price-card on-navy">
+          <span class="tag">시범 고객 모집 중: 무료 확인부터 합니다</span>
+          <h3 class="display-md" style="margin-top:20px">엑셀 자동 취합</h3>
+          <p class="amount num">150,000<small>원</small></p>
+          <p class="muted">양식 1종, 20곳까지 · 작업 기간 5일</p>
+          <ul class="checks">
+            <li>원격 설치</li><li>병행 운영 2주</li><li>수정 2회</li>
+          </ul>
+          <hr>
+          <p class="muted">월 유지보수 50,000원 (선택)</p>
+          <div class="btn-row" style="margin-top:24px">
+            <a class="btn btn--fill" href="https://open.kakao.com/o/gR3ErhYi" target="_blank" rel="noopener">무료 확인부터 하기</a>
+          </div>
+          <p style="margin-top:12px" data-optional-wrap><a class="text-link" data-optional-link href="【크몽 엑셀 취합 주소 — 승인 대기】" target="_blank" rel="noopener">크몽에서 보기</a></p>
+          <p class="muted" style="margin-top:12px">홈페이지에서는 결제를 받지 않습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 못 하는 것 / 권하지 않는 분 -->
+  <section class="section section--soft" aria-labelledby="no-title">
+    <div class="container">
+      <h2 id="no-title" class="title"><span class="mute">맡기시기 전에</span><span class="strong">못 하는 것부터 말씀드립니다</span></h2>
+      <div class="two-box">
+        <div class="card">
+          <h3 class="heading-lg">못 하는 것</h3>
+          <ul class="dashes">
+            <li>PDF·사진·HWP·암호 걸린 엑셀</li>
+            <li>복잡한 서식, 코드표 연결, 회사 고유 양식 채우기 (아직)</li>
+            <li>메신저로 받은 파일 자동 수집, 회사 메일 직접 연결 (지금은 Gmail만)</li>
+            <li>Windows 전용, PC가 꺼져 있으면 돌지 않음</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="heading-lg">권하지 않는 분</h3>
+          <ul class="dashes">
+            <li>파일이 2~3개뿐이거나 가끔만 합치는 분 — Copilot이나 Claude 같은 AI 채팅으로 직접 하시는 편이 낫습니다.</li>
+            <li>양식이 매번 완전히 달라지는 곳</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 비교 -->
+  <section class="section section--white" aria-labelledby="cmp-title">
+    <div class="container">
+      <h2 id="cmp-title" class="title"><span class="mute">다른 방법이 나을 때도</span><span class="strong">있습니다</span></h2>
+      <p class="lead">회사 이름 대신 방법의 종류로 비교했습니다. 상대가 나은 점도 함께 적었습니다.</p>
+      <div class="table-wrap">
+        <table class="table table--compare">
+          <thead><tr><th scope="col">방법</th><th scope="col">그쪽이 나은 것</th><th scope="col" class="us">오토리가 나은 것</th></tr></thead>
+          <tbody>
+            <tr><td>AI 채팅 직접 사용</td><td>문서형 보고서, 유연함</td><td class="us">매주 사람 없이 실행, 같은 입력에 같은 결과, 검산</td></tr>
+            <tr><td>AI 시트 도구</td><td>일회성 합치기·차트</td><td class="us">파일을 올리지 않음, 원본 합계 대조, 반복 실행</td></tr>
+            <tr><td>오피스 내장 AI</td><td>열린 파일 분석</td><td class="us">여러 곳에서 온 파일을 반복해서 취합, 검산</td></tr>
+            <tr><td>노코드 자동화 도구</td><td>연결할 수 있는 서비스가 많음</td><td class="us">한 가지 일 전용, 버튼 하나, 한글 오류 안내</td></tr>
+            <tr><td>맞춤 외주 개발</td><td>넓은 기술 범위, 실적과 후기</td><td class="us">낮은 가격, 빠른 설치, 못 하는 것 공개</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. 자주 묻는 질문 -->
+  <section class="section section--soft" aria-labelledby="faq-title">
+    <div class="container split">
+      <div class="sticky">
+        <h2 id="faq-title" class="title"><span class="mute">자주</span><span class="strong">묻는 질문</span></h2>
+      </div>
+      <div class="faq" style="margin-top:0">
+        <details><summary>엑셀 여러 개 합치기를 자동으로 할 수 있나요?</summary><div class="a"><p>네. 지점·거래처에서 들어오는 엑셀을 정한 요일에 모아 합치고(취합·집계·병합), 원본 합계와 비교한 검산 표까지 만든 보고서를 메일로 보내 드립니다. 다만 파일이 2~3개뿐이라면 AI 채팅으로 직접 하시는 편이 낫습니다.</p></div></details>
+        <details><summary>엑셀을 잘 몰라도 되나요?</summary><div class="a"><p>됩니다. 한글 화면에 버튼 하나이고, 처음 설치는 원격으로 같이 합니다. 명령어를 치실 일은 없습니다.</p></div></details>
+        <details><summary>우리 자료가 밖으로 나가나요?</summary><div class="a"><p>나가지 않습니다. 자료는 담당자님 PC 안에서만 처리합니다. 오토리는 자료를 받아 둘 서버가 없습니다. AI를 켜면 열 제목과 값의 모양만 보내고, AI를 꺼도 핵심 기능은 동작합니다.</p></div></details>
+        <details><summary>AI가 숫자를 바꾸지는 않나요?</summary><div class="a"><p>바꾸지 않습니다. AI는 열 이름을 맞추는 "고르기"만 하고, 계산은 프로그램 코드가 합니다. 모르는 것은 지어내지 않고 여쭤봅니다.</p></div></details>
+        <details><summary>회사 메일로도 되나요?</summary><div class="a"><p>지금은 Gmail만 됩니다. 취합 전용 Gmail을 하나 만들어 쓰시거나, 받는 폴더에 파일을 넣어 두시면 됩니다.</p></div></details>
+        <details><summary>Mac에서도 되나요?</summary><div class="a"><p>안 됩니다. Windows 전용이고, PC가 켜져 있어야 정한 시간에 돌아갑니다.</p></div></details>
+        <details><summary>양식이 바뀌면요?</summary><div class="a"><p>처음 보는 열 이름은 여쭤보고, 한 번 알려 주시면 기억합니다. 양식이 매번 완전히 달라지는 곳에는 권하지 않습니다.</p></div></details>
+        <details><summary>시범 고객은 무엇을 하면 되나요?</summary><div class="a"><p>양식 견본(개인정보를 지운 것)을 오픈채팅이나 이메일로 보내 주시면 됩니다. 실제로 돌려 보고 2일 안에 되는지, 안 되는지와 이유를 답해 드립니다. 된다고 확인된 경우에만 진행합니다.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. 마지막 행동 -->
+  <section class="section--navy cta" aria-labelledby="cta-title">
+    <div class="container">
+      <h2 id="cta-title" class="display-lg">우리 엑셀, 자동 취합 되는지<br>먼저 확인해 보세요.</h2>
+      <p class="lead">양식 견본(개인정보를 지운 것)을 보내 주시면 2일 안에 되는지, 안 되는지와 그 이유를 답해 드립니다.</p>
+      <div class="btn-row">
+        <a class="btn btn--fill" href="https://open.kakao.com/o/gR3ErhYi" target="_blank" rel="noopener">오픈채팅으로 견본 보내기</a>
+      </div>
+      <div class="sub-links">
+        <a data-optional-link href="https://docs.google.com/forms/d/e/1FAIpQLSfPmnOjYHniAka4ohXgdJXZ7aK9ENPc85kLYHmIbstw0YI6tg/viewform" target="_blank" rel="noopener">문의 양식으로 남기기</a>
+        <a href="mailto:autori580@gmail.com">이메일 보내기</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!--#footer-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/logo/logo-lockup-white.png" alt="오토리" width="96" height="30">
+        <p>매주 되풀이되는 사무 일을 프로그램이 대신하도록 만드는 1인 AI 자동화 회사입니다.</p>
+      </div>
+      <div><h2>솔루션</h2><ul><li><a href="../solutions/excel.html">엑셀 자동 취합</a></li><li><a href="../solutions/reviews.html">리뷰 분석 + 답글 초안</a></li></ul></div>
+      <div><h2>데모</h2><ul><li><a href="../solutions/seller-settlement.html">셀러 주문·정산 엑셀 취합 (데모)</a></li><li><a href="../solutions/orders-shipping.html">주문·송장 자동 정리 (데모)</a></li></ul></div>
+      <div><h2>오토리</h2><ul>
+        <li><a href="../index.html">처음으로</a></li>
+        <li><a href="../about.html">소개</a></li>
+        <li><a href="../contact.html">문의</a></li>
+        <li><a href="mailto:autori580@gmail.com">autori580@gmail.com</a></li>
+        <li><a href="https://www.youtube.com/@autori_ai" target="_blank" rel="noopener">유튜브 @autori_ai</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 오토리 (Autori)</p>
+      <!-- 【공개할 사업자 정보: 상호·대표자·사업자등록번호】 정해지면 여기에 -->
+      <!-- 【이용약관·개인정보처리방침 링크】 준비되면 여기에 -->
+      <p>전화·방문 상담은 하지 않습니다. 오픈채팅이나 이메일로 연락해 주세요.</p>
+    </div>
+  </div>
+</footer>
+<!--/footer-->
+<script src="../script.js" defer></script>
+</body>
+</html>
