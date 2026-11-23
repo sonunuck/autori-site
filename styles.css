@@ -436,6 +436,7 @@ main > .section:first-child { padding-top: calc(var(--header-h) + 120px); }
 .site-footer ul a { display: inline-flex; min-height: 36px; align-items: center; text-decoration: none; color: var(--text-2); }
 .site-footer ul a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 .footer-bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line-soft); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; color: var(--text-3); font-size: 13px; }
+.footer-bottom .biz { flex-basis: 100%; color: var(--text-2); line-height: 1.7; }
 
 /* ---------- 스크롤 등장 (움직임 줄이기 설정이면 끔) ---------- */
 @media (prefers-reduced-motion: no-preference) {
